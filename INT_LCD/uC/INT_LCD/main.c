@@ -10,6 +10,7 @@
 #include <util/delay.h>
 #include <stdio.h>
 #include "LCD.h"
+#include "UART.h"
 
 int main(void){
 	DDRB = 0xF6;

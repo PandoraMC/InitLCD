@@ -38,7 +38,8 @@ SUBDIRS :=
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../LCD.c \
-../main.c
+../main.c \
+../UART.c
 
 
 PREPROCESSING_SRCS += 
@@ -49,19 +50,23 @@ ASM_SRCS +=
 
 OBJS +=  \
 LCD.o \
-main.o
+main.o \
+UART.o
 
 OBJS_AS_ARGS +=  \
 LCD.o \
-main.o
+main.o \
+UART.o
 
 C_DEPS +=  \
 LCD.d \
-main.d
+main.d \
+UART.d
 
 C_DEPS_AS_ARGS +=  \
 LCD.d \
-main.d
+main.d \
+UART.d
 
 OUTPUT_FILE_PATH +=INT_LCD.elf
 
@@ -77,6 +82,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

@@ -1,3 +1,8 @@
+#Atmel Studio
+*.eep
+*.lss
+*.srec
+
 # Prerequisites
 *.d
 
